@@ -10796,7 +10796,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@edt-pages.github.io:443?security=tl
                             kind: "non-cn",
                             heading: "红牌警告",
                             title: "检测到当前网络出口不是 CN 直连",
-                            message: "当前在线优选检测已成功完成，但返回的出口国家代码不是 CN。请确认浏览器当前访问链路是否经过代理、VPN 或境外网络后再进行优选，否则延迟与测速结果不能代表 CN 直连环境。",
+                            message: "当前在线优选检测已成功完成，但返回的出口地区代码不是 CN。请确认浏览器当前访问链路是否经过代理、VPN 或境外网络后再进行优选，否则延迟与测速结果不能代表 CN 直连环境。",
                             rows: nonCn,
                             details: completed
                         };
@@ -10846,7 +10846,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@edt-pages.github.io:443?security=tl
                     return `<div class="network-warning-row">
                         <span class="network-warning-family">${escapeHtml(family.toUpperCase())}</span>
                         <span class="network-warning-ip">${escapeHtml(ip)}</span>
-                        <span class="network-warning-country">国家代码 ${escapeHtml(country)}</span>
+                        <span class="network-warning-country">地区代码 ${escapeHtml(country)}</span>
                     </div>`;
                 }
 
